@@ -88,7 +88,8 @@
     rm -r <dir> 删除文件件  
     rm -rf <git_dir> 删除含有git的文件夹  
     有时候在gcp上git不能push, 使用git push origin main  
-    
+  9. 补充  
+    由于已经上传了module到github, 所以从第6步开始就行  
     
      
   
