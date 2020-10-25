@@ -83,6 +83,12 @@
   
   8. 其他可能用到的指令  
     kubectl delete -f <yaml-file> 根据yaml-file关闭deployment  
+    cp <file> <dir> 把一个文件copy到另一个文件夹  
+    rm <file> 删除文件  
+    rm -r <dir> 删除文件件  
+    rm -rf <git_dir> 删除含有git的文件夹  
+    
+     
   
     
   
