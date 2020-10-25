@@ -87,10 +87,11 @@
     rm <file> 删除文件  
     rm -r <dir> 删除文件件  
     rm -rf <git_dir> 删除含有git的文件夹  
-    有时候在gcp上git不能push, 使用git push origin main  
+    gcloud container clusters list  查看已经创建的cluster  
+    gcloud container clusters delete <cluster_name>  关闭cluster  
   9. 补充  
     由于已经上传了module到github, 所以从第6步开始就行  
-    
+    有时候在gcp上git不能push, 使用git push origin main  
      
   
     
