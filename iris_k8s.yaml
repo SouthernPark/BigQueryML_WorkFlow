@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iris-model-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: iris-model-server
+  template:
+    metadata:
+      labels:
+        app: iris-model-server
+    spec:
+      containers:
+      - name: iris-model-container
+        image: gcr.io/test-293512/iris_serving@sha256:0558d977ea0df53df55e2a704c4f4c85e4650ddd82100b14d644d23113070980
+        ports:
+        - containerPort: 8501
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    run: iris-model-service
+  name: iris-model-service
+spec:
+  ports:
+  - port: 8501
+    targetPort: 8501
+  selector:
+    app: iris-model-server
+  type: LoadBalancer
