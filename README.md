@@ -87,6 +87,8 @@
     rm <file> 删除文件  
     rm -r <dir> 删除文件件  
     rm -rf <git_dir> 删除含有git的文件夹  
+    有时候在gcp上git不能push, 使用git push origin main  
+    
     
      
   
