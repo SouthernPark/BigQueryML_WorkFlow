@@ -65,7 +65,7 @@
         https://cloud.google.com/kubernetes-engine/docs/how-to/creating-a-zonal-cluster   
         点击上方网址, 点击文档中的Enabled Google Kubernetes Engine API 按钮  
       d. 创建一个节点数为3的k8s cluster  
-        gcloud container clusters create <name your cluster> --num-nodes 3  
+        gcloud container clusters create <name_of_your_luster> --num-nodes 3  
       e. 设置默认cluster, 获得credential  
         gcloud config set container/cluster <your_cluster_name>  
         (如果你忘了cluster的名字可以通过: gcloud container clusters list 查看已经创建的cluster)  
